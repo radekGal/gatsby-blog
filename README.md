@@ -7,8 +7,7 @@
 <h1 align="center">
   Gatsby Blog
 </h1>
-
-# [Live preview](http://radekthemes.com)
+## [Live preview](http://radekthemes.com)
 
 ## Quick start
 
