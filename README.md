@@ -8,7 +8,7 @@
   Gatsby Blog
 </h1>
 
-_[Live preview](http://radekthemes.com)_
+# [Live preview](http://radekthemes.com)
 
 ## Quick start
 
