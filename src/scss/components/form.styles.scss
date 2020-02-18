@@ -1,0 +1,59 @@
+@import '../variables';
+@import '../mixins';
+
+.form {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(mobile) {
+            flex-direction: column;
+            justify-content: start;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding-left: $padding-15;
+        @include breakpoint(mobile) {
+            width: 100%;
+            padding-left: 0;
+            margin-top: 18px;
+        }
+        input, textarea {
+            outline: none;
+            padding: 14px 24px;
+            font-family: 'Poppins', sans-serif;
+            border: 1px solid $gray;
+            &:hover {
+                border-color: $black;
+            }
+        }
+        input {
+            box-shadow: none;
+            border-radius: 0;
+            margin-bottom: 12px;
+        }
+        textarea {
+            resize: vertical;
+            overflow: auto;
+            margin-bottom: 18px;
+        }
+    }
+    &__text {
+        width: 60%;
+        padding-right: $padding-15;
+        h3 {
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 24px;
+        }
+        &__item {
+            margin-bottom: 12px;
+            h4 {
+                margin-bottom: 6px;
+            }
+        };
+    }
+}

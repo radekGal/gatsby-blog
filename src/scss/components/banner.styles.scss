@@ -1,0 +1,11 @@
+@import '../mixins';
+
+.banner {
+    margin-bottom: 72px;
+    @include breakpoint(tablet) {
+        margin-bottom: 60px;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 32px;
+    }
+}

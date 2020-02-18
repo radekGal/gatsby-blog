@@ -1,0 +1,86 @@
+@import '../variables';
+@import '../mixins';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    background: $white;
+    padding: 32px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(mobile) {
+            display: block;
+        }
+        &__home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                font-size: 24px;
+                text-decoration: none;
+                color: #000;
+            }
+            .hb-menu {
+                cursor: pointer;
+                outline: none;
+                &__icon {
+                    font-size: 18px;
+                }
+                @include breakpoint(tablet) {
+                    display: none;
+                }
+                @include breakpoint(desktop) {
+                    display: none;
+                }
+                @include breakpoint(large) {
+                    display: none;
+                }
+            }
+        }
+        .nav-links {
+            text-decoration: none;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            @include breakpoint(mobile) {
+                height: 0;
+            }
+            a {
+                margin: 0 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $gray;
+                font-weight: 600;
+                font-size: $font-14;
+                transition: all 0.4s ease;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    color: $black;
+                }
+            }
+            // @include breakpoint(mobile) {
+            //     display: flex;
+            //     flex-direction: column;
+            // }
+        }
+        .show-nav {
+            display: flex;
+            @include breakpoint(mobile) {
+                height: auto;
+                flex-direction: column;
+                a {
+                    margin: 6px 0;
+                }
+            }
+        }
+    
+    }
+}

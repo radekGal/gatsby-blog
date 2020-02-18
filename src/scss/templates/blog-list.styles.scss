@@ -1,0 +1,26 @@
+@import '../variables';
+
+.pagination {
+    padding: 24px 0;
+    &__numbers {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-right: 12px;
+            a {
+                text-decoration: none;
+                padding: 6px 18px;
+                color: $black;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .active-pg {
+            background-color: $black;
+            color: $white;
+        }
+    }
+}

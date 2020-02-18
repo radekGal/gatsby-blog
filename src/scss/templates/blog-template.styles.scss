@@ -1,0 +1,48 @@
+@import '../variables';
+@import '../mixins';
+
+.single-post {
+    &__image {
+        margin-bottom: 96px;
+        @include breakpoint(mobile) {
+            margin-bottom: 48px;
+        }
+    }
+    &__body {
+        padding: 0 120px;
+        h3 {
+            margin-bottom: 14px;
+        }
+        p {
+            margin-bottom: 72px;
+            &:nth-child(5) {
+                margin-bottom: 12px;
+            }
+        }
+        @include breakpoint(mobile) {
+            padding: 0;
+            p {
+                margin-bottom: 48px;
+            }
+        }
+    }
+}
+.single-post__links {
+    .post-item-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 120px 0 120px;
+        @include breakpoint(mobile) {
+            padding: 24px 0 0 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: $gray;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

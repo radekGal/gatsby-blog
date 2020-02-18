@@ -1,0 +1,24 @@
+@import '../variables';
+@import '../mixins';
+
+.about-more__content {
+    display: flex;
+    flex-direction: row;
+    p {
+        margin-top: 14px;
+        &:first-child {
+            padding-right: $padding-15;
+        }
+        &:last-child {
+            padding-left: $padding-15;
+        }
+    }
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        p {
+            &:last-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
