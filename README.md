@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Gatsby Blog
 </h1>
 
 _[Live preview](http://radekthemes.com)_
